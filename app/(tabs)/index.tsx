@@ -1,13 +1,21 @@
-
-import { TextHero, ViewContainer } from "@/components/styles/Index.styled";
+import {
+  BackgroundImages,
+  DarkOverlay,
+  TextHero,
+  ViewContainer,
+} from "@/components/styles/Index.styled";
 import React from "react";
-// import { Text} from "react-native";
 
 export default function HomeScreen() {
   return (
- 
     <ViewContainer>
-      <TextHero>HELLO VLA2</TextHero>
+      <BackgroundImages
+        source={require("../../assets/images/A7R07854ⒸDamienDecaix.jpg")}
+      >
+        <DarkOverlay />
+
+        <TextHero>HELLO VLA2</TextHero>
+      </BackgroundImages>
     </ViewContainer>
   );
 }
